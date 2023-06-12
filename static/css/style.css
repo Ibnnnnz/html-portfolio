@@ -1,0 +1,237 @@
+html,
+body{
+  margin: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+.center{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	z-index: 1000;
+}
+.ring{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	animation: ring 2s linear infinite;
+}
+@keyframes ring{
+	0%{
+		transform: rotate(-0deg);
+		box-shadow: 1px 5px 2px #e65c00;
+	}
+	50%{
+		transform: rotate(180deg);
+		box-shadow: 1px 5px 2px #18b201;
+	}
+	100%{
+		transform: rotate(320deg);
+		box-shadow: 1px 5px 2px #0456cb;
+	}
+}
+.ring::before{
+	position: absolute;
+	content:'';
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+	border-radius: 50%;
+}
+.textloader{
+	color: #737373;
+	font-size: 31px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	line-height: 150px;
+	animation: text 3s ease-in-out linear infinite;
+}
+@keyframes text{
+	100%{
+		color:white;
+	}
+}
+nav.navbar{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(5px);
+}
+.navbar-nav > li{
+  margin: 0 48px;
+}
+header {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  background-color: black;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.overlay-bottom-to-top{
+  margin: 0;
+  padding: 0;
+  max-width: auto;
+  max-height: 500px;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  background-color: #212529;
+  transition: all 1.2s ease;
+}
+.overlay-bottom-to-top.active{
+  height: 0px;
+}
+.overlay-skills{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+	background-color: #21252990;
+  backdrop-filter: blur(100px);
+  transition: all 1s linear;
+  opacity: 1;
+  z-index: 10;
+}
+.overlay-skills.active{
+  opacity: 0;
+}
+#my-id{
+  overflow-x: hidden;
+}
+.card{
+  box-shadow: 10px 10px 0px 0px black;
+  width: 100%;
+  z-index: 1000;
+  
+}
+.album-cover{
+	opacity: 0;
+  transform: translateY(150px);
+	transition: all 2s ease;
+}
+
+.album-cover.active{
+	transform: translateX(0);
+	opacity: 1;
+}
+.img-container > a > img{
+  object-fit: cover;
+  max-width: 900px;
+  /* max-height: 250px; */
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+a > img:hover{
+  filter: contrast(110%) brightness(120%);
+  transition: all .7s;
+  
+}
+a > img:not(:hover){
+  transition: all .7s;
+}
+img.portrait{
+  object-fit: cover;
+  max-height: 700px;
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+  -webkit-animation: flickerAnimation .5s infinite;
+  -moz-animation: flickerAnimation .5s infinite;
+  -o-animation: flickerAnimation .5s infinite;
+  animation: flickerAnimation .5s infinite;
+}
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1351px) {
+  /* .album-cover:nth-child(odd){
+    transform: translateX(-500px);
+  }
+  .album-cover:nth-child(even){
+    transform: translateX(500px);
+  }
+  .album-cover{
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .album-cover.active{
+    transform: translateX(0);
+    opacity: 1;
+  }*/
+} 

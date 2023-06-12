@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+    <title>Portfolio Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="../static/css/style.css" rel="stylesheet">
+    
+</head>
+<body class="bg-dark text-light">
+
+    <div id="loader" class="center">
+        <div class="ring"></div>
+        <div class="textloader" id="text"></div>
+    </div>
+    
+    <!-- Responsive Navbar with Hamburger Menu -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-expand-md fixed-top ms-auto me-auto text-center" id="mainNav">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse text-center align-content-center align-items-center justify-content-center" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#header-home">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#album">Album</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-me">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Soon</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Header Section with Video Overlay -->
+    <header>
+        <div class="overlay">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="../static/video/Blonde-Samurai.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white" style="font-family: 'Courier New', Courier, monospace; line-height: 200px;">
+              <h1 class="display-5 fw-bold" class="typewrite">
+                    <a href="" class="typewrite" data-period="5000" data-type='["Hello There! How Are You?","Welcome to My Portfolio Web"]' style="text-decoration: none; color: #fff;">
+                      <span id="wrap" class="wrap"></span>
+                    </a>
+              </h1>
+              <p class="lead mb-0">Just my personal project collection</p>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <!-- Section Header Home -->
+    <section id="header-home">
+        <div class="d-flex container-fluid" id="header-home" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="row p-4 pb-0 pe-lg-1 pt-lg-5 align-items-center rounded-3">
+                <div class="col-lg-7 p-4 p-lg-5 pt-lg-3">
+                    <div class="overlay-bottom-to-top"></div>
+                    <h1 class="display-2 fw-bold lh-5">About Me?</h1>
+                    <p class="lead">I have a name, The name is Muhammad Ibnu Abaydillah. 
+                        I'm just an enthusiast for programming and 3D art. I work every day to achieve and get done with my personal project.
+                        Dig my idea day by day, week by week, even month by month. "How can you work with only 1 project that is possible to get done within 1 month?"
+                        Because I'm a perfectionist, it means I can't leave out the missing details in my project.
+                    </p>
+                    
+                </div>
+                <div class="col-lg-7 p-4 p-lg-5 pt-lg-3 offset-lg-5" style="text-align: right; margin-top: 25vh; margin-bottom: 25vh;">
+                    <div class="overlay-bottom-to-top"></div>
+                    <h1 class="display-2 fw-bold lh-5">Personal Statement?</h1>
+                    <p class="lead">
+                        Competent and reliable 3D Generalist and Junior Web Development looking for opportunities to gain some valuable work experience.
+                        Strong communication skills, ability to perform under pressure, solve problems creativity, and attention to detail.
+                    </p>
+                </div>
+                
+
+                <div class="col-lg-7 p-4 p-lg-5 pt-lg-3" style="margin-top: 25vh; margin-bottom: 25vh;">
+                    <div class="overlay-bottom-to-top"></div>
+                    <h1 class="display-2 fw-bold lh-5">My Experience?</h1>
+                    <p class="lead">I have no experience in the professional world, especially in employment contracts. Because after graduating, I focused on what I wanted to develop and what I liked, especially in terms of 3D and Programming, even until now I still hold it. Right now, I’m pretty confident in myself that what I’ve been able to do is compete in this modern world, and I am so grateful to have the opportunity to show my potential.
+                    </p>
+                </div>
+                
+
+                
+            </div>  
+        </div>    
+    </section>
+
+    <!-- Section My Skills -->
+    <section id="my-skills" style="margin: 50vh 0vh;">
+        <div id="my-skills" class="">
+            <div class="overlay-skills"></div>
+            <div class="container-fluid">
+                <div class="px-4 pt-5 my-5 text-center">
+                    
+                    <h1 class="display-3 fw-bold">My Skills?</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <hr>
+                        <p class="lead mb-4">Beginner Fullstack Programming (HTML, CSS, Js, Python)</p>
+                        <hr>
+                        <p class="lead mb-4">3D Environment Designing</p>
+                        <hr>
+                        <p class="lead mb-4">3D Blender User</p>
+                        <hr>
+                        <p class="lead mb-4">3D Lighting Scene Setup</p>
+                        <hr>
+                        <p class="lead mb-4">MS Office Suite (Word MS, Excel, PowerPoint)</p>
+                        <hr>
+                        <p class="lead mb-4">Familiar with Adobe Creative Tools (Premiere Pro, Photoshop) and extra editing tools (Davinci Resolve)</p>
+                        <hr>
+                        <p class="lead mb-4">Demonstrated success as a team player, fostering positive working relationships and contributing to a collaborative work environment. </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Album Project -->
+    <section id="album">
+        <div id="my-album">
+            <div class="container py-5">
+                <div class="row py-lg-5 text-center">
+                    <div class="col-lg-6 col-md-12 mx-auto">
+                        <h1 class="fw-light">My Project Gallery</h1>
+                        <p class="lead text-muted">
+                            Rules when you visited my project gallery, please observe and understand
+                            <br>
+                            <ul class="lead text-muted">
+                                <li>You should not take these pictures for any commercial need, because this artwork is a personal project.</li>
+                                <li>I often use some assets that are CC0 (<em>open for public</em>) and CC Attribution (<em>commercial are allowed</em>). So if there is any similarity in the asset that I used with other artwork, please be acclaimed.</li>
+                                <li><em>"How do I want to use your images for my reference and project needs?"</em> You can contact me to get the artwork, I will send it by email. It may take a moment, but I'm trying to reply that email as soon as possible.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block text-bg-dark text-center p-5">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-4 mb-lg-3 mt-lg-5">
+                    <button id="landscape-album-btn" class="btn btn-light" onclick="landscapeAlbumBtn()">Landscape Project</button>
+                    <button id="portrait-album-btn" class="btn btn-outline-light" onclick ="portraitAlbumBtn()">Portrait Project</button>
+                </div>
+                <div id="landscape-album" class="">
+                    <!-- Page Heading -->
+                    <h1 class="my-4">Landscape Project
+                        <small></small>
+                    </h1>
+                
+                    <div class="row text-dark">
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <div class="overlay-photo-album"></div>
+                                    <a href="#"><img class="card-img-top" src="../static/album/keep_an_eye_on_you.jpg" alt="artwork-landscape-1"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Keep an Eye on You
+                                    </h4>
+                                    <p class="card-text">Inspired by the Arctic Outpost from Google, this was my latest personal project.
+                                        I'm just putting some short story about this artwork, but it will be revealed soon</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/never_coming_home.jpg" alt="artwork-landscape-2"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Never Comin' Home
+                                    </h4>
+                                    <p class="card-text">I was watching MV (Sneakers) from ITZY, and then I don't know how that was quitely messing around in my head to make a ballroom scene.
+                                        But, as you can see, that is not what appears in the MV, but I think this is good enough.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/the_sky_opened_up.png" alt="artwork-landscape-3"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        The Sky Opened Up
+                                    </h4>
+                                    <p class="card-text">This artwork came from when I listened to Adelene Hill - Moments to Memories.
+                                        This song has nature vibes for me, but until now, I've never gone to the mountains to enjoy nature.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/delaying_the_inevitable.jpg" alt="artwork-landscape-4"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Delaying the Inevitable
+                                    </h4>
+                                    <p class="card-text">The idea for this project came to me when I remembered that my PlayStation 2 game (Midnight Club 3 DUB Edition Remix) had a cool loading screen with exotic cars.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/rule_of_dumb.jpg" alt="artwork-landscape-5"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Rule of Dumb
+                                    </h4>
+                                    <p class="card-text">I was rewatching movies (2Fast 2Furious), 
+                                        this scene references scene when Bryan O'Connor (Paul Walker) and Roman Pierce (Tyrese Gibson) race to complete the mission (bring the items inside the red car in the port), Somehow Bryan wants to Show Off to his teammates what he's got.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/make_him_eat_dust.jpg" alt="artwork-landscape-6"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Make Him Eat Dust
+                                    </h4>
+                                    <p class="card-text">When I was search another 3D Blender tutorial, I accidentally watch "amazing animation car video with 3D Blender" My heart is breathing so fast to achieve animation like that.
+                                        But, my computer is switching mode to the Rage Mode and trying to tell me like "Don't torture me again with your Biggest idea"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/not_looking_for_confrontation.jpg" alt="artwork-landscape-7"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Not Looking for Confrontation
+                                    </h4>
+                                    <p class="card-text">When I saw the loading screen on the game NFS Heat, I wanted to try to make a scene like what it looks like there.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/I_had_it_all_I_lost_it_all.jpg" alt="artwork-landscape-8"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        I Had It All and I Lost It All
+                                    </h4>
+                                    <p class="card-text">Inspired by the game NFS Underground 2 on the Playstation 2, when our car enters the garage to be modified</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/I_hid_things.jpg" alt="artwork-landscape-9"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        I Hid Things
+                                    </h4>
+                                    <p class="card-text">The idea came when I visited the artstation website to find some references. </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/I_pittied_you.jpg" alt="artwork-landscape-10"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        I Pittied You
+                                    </h4>
+                                    <p class="card-text">Adaptation of the forest in the game the last of us. one of my favorite artworks.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100 album-artwork">
+                                <a href="#"><img class="card-img-top" src="../static/album/dance_on_the_dreams.jpg" alt="artwork-landscape-11"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        BackFace - 1/250
+                                    </h4>
+                                    <p class="card-text">It just came into my head, as if it had been formed in my view to create this artwork.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="../static/album/which_way.jpg" alt="artwork-landscape-12"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Which Way
+                                    </h4>
+                                    <p class="card-text">I remember so much that Mortal Kombat Shaolin Monks (game of Playstation 2) had a menu screen like this, looking at this artwork just like I remember my childhood.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="portrait-album" class="d-none">
+                    <h1 class="my-4">Portrait Project
+                        <small></small>
+                    </h1>
+                
+                    <div class="row text-dark">
+                       
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/sandevistan.jpg" alt="artwork-portrait-1"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Sandevistan
+                                    </h4>
+                                    <p class="card-text">I watched Cyberpunk: Edgerunners on Netflix. In that series I was very fascinated by the scene where the main character (David) used the advanced technology called Sandevistan. 
+                                        shown freeze frame technique when he used it, and it was very cool.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/price_you_pay.jpg" alt="artwork-portrait-2"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Use the Cyberpunk Skeleton If You Want to Survive
+                                    </h4>
+                                    <p class="card-text">I love the game franchise Resident Evil, the story is interesting and supported by the strength of the strengthening of each character. 
+                                        This artwork I created based on the game, more precisely Resident Evil 6, 
+                                        there is a scene where Leon S. Kennedy met Chris Redfield for the first time in the same game. </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/it_never_really_ends.jpg" alt="artwork-portrait-3"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Dying in the Dream
+                                    </h4>
+                                    <p class="card-text">Watching the anime series Neon Genesis: Evangelion made my head a little twisted thinking about what the creator was trying to convey through the anime. 
+                                        But I’m not going to talk about it, but what I do here. This idea I got after watching the series. 
+                                        It may not be in that series, but I don’t know why this idea came afterwards, and the colour blend I can get from Google with the keyword ‘Retro Art’.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/my_heart_just_skipped_a_space.jpg" alt="artwork-portrait-4"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        My Heart Just Skipped a Space
+                                    </h4>
+                                    <p class="card-text">This is the implementation of my old project that has been abandoned. 
+                                        Many of which that I have fixed in this artwork, on its light layout that I can say is most felt for myself.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/cube_face.jpg" alt="artwork-portrait-5"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Energetic Healing
+                                    </h4>
+                                    <p class="card-text">I was looking at the account of a very famous and cool 3D artist in casting his idea in my opinion, namely @toomuchlag. 
+                                        His work that made me want to learn to make artwork like he did.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/spotless_mind.jpg" alt="artwork-portrait-6"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Spotless Mind
+                                    </h4>
+                                    <p class="card-text">A 3D artist who focuses on surrealism and monumentalism with only single base mesh, but makes a head with a variety of interesting models, namely @true_paulgreen, 
+                                        making it different from the others. 
+                                        And in the end I tried what he did, and took reference to another work of art, “The Son of Man.”</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/more_than_life.jpg" alt="artwork-portrait-7"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Let Himself Breathe
+                                    </h4>
+                                    <p class="card-text">
+                                        (Ghost - Justin Bieber) is one of the impressive music, lyrics and instruments used to make me touch. 
+                                        I tried to represent my feelings based on what was in my head, and this artwork is the closest to it.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/alone_ellie.jpg" alt="artwork-portrait-8"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Alone Ellie
+                                    </h4>
+                                    <p class="card-text">Who doesn’t know the game franchise The Last Of Us among gamers, is a very successful franchise game with a takeover related to the real life of humans today. and this project I dedicate to the game.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/be_silence_ellie.jpg" alt="artwork-portrait-9"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Be Silence Ellie
+                                    </h4>
+                                    <p class="card-text">Who doesn’t know the game franchise The Last Of Us among gamers, is a very successful franchise game with a takeover related to the real life of humans today. and this project I dedicate to the game.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="album-cover col-xxl-4 col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="img-container">
+                                    <a href="#"><img class="card-img-top portrait" src="../static/album/lava_man.jpg" alt="artwork-portrait-10"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Find the Clarity
+                                    </h4>
+                                    <p class="card-text">At the time I was studying the simulation of smoke and fire in the 3D app with a chaotic feeling, because of my frustration, I felt there was no improvement in myself in 3D art, even spilling ideas was difficult. 
+                                        This is the feeling that I feel every moment when I make artwork.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact-me" style="margin: 10vh 0vh;">
+        <div class="my-contact container-fluid" id="contact-me">
+            <div class="px-4 py-5 my-5 text-center" >
+                <h1 class="display-5 fw-bold text-body-emphasis"><i class="bi bi-person-circle"></i> Contact Me:</h1>
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="display-5 fw-bold text-body-emphasis">Email: ibnuabaydillah10@gmail.com</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- Footer -->
+<footer id="mainFooter" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    
+    <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-muted">© 2023 Copyright: Ibn.a_</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
+        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/ibn.a_"><i class="bi bi-instagram" style="color: aliceblue;"></i></a>
+        </li>
+        <li class="ms-3"><a class="text-muted" href="https://github.com/Ibnnnnz">
+            <i class="bi bi-github" style="color: aliceblue;"></i></a>
+        </li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../static/js/script.js"></script>
+    
+</footer>
+</html>
