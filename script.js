@@ -105,7 +105,7 @@ window.onload = function() {
 
 window.addEventListener('scroll', reveal);
     function reveal(){
-        let reveals = document.querySelectorAll(['.album-cover', '.overlay-bottom-to-top', '.overlay-skills', '.element-form']);
+        let reveals = document.querySelectorAll(['.header-album', '.album-cover', '.overlay-bottom-to-top', '.overlay-skills', '.element-form']);
 
         for(var i = 0 ; i < reveals.length; i++){
         var windowheight = window.innerHeight;
